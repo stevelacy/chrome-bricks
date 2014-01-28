@@ -29,7 +29,7 @@ gulp.task('coffee', function(){
 });
 
 gulp.task('copy', function(){
-  gulp.src(['./src/*', '!.jade'])
+  gulp.src(['./src/*', '!./src/*.jade'])
   .pipe(gulp.dest('./app'));
   gulp.src('./src/js/vendor/*.js')
   .pipe(gulp.dest('./app/js/vendor'));
@@ -49,7 +49,7 @@ gulp.watch('./src/js/*.coffee', function(){
 gulp.watch('./src/css/*.styl', function(){
   gulp.run('stylus');
 });
-gulp.watch(['./src/*', '!*.jade'], function(){
+gulp.watch(['./src/*', '!./src/*.jade'], function(){
   gulp.run('copy');
 });
 
