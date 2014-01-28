@@ -1,0 +1,24 @@
+{  
+   "name": "Chrome Bricks",
+   "version": "0.0.1",
+   "app": {
+      "launch": {
+         "local_path": "index.html"
+      }
+   },
+   "chrome_url_overrides": {
+      "newtab": "index.html"
+   },
+   "icons": {
+      "128": "images/icon_128.png"
+   },
+   "manifest_version": 2,
+   "content_security_policy": "script-src 'self' https://clients1.google.com; object-src 'self'",
+   "permissions": [ 
+      "https://www.google.com/complete/search?*",
+      "contextMenus",
+      "notifications",
+      "unlimitedStorage"
+       ],
+   "web_accessible_resources": [ "https://www.google.com/complete/search", "index.html" ]
+}

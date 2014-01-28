@@ -1,0 +1,23 @@
+{
+  "name": "chrome-bricks",
+  "description": "Chrome Bricks deck",
+  "version": "0.0.1",
+  "author": "Steve Lacy me@slacy.me (slacy.me)",
+  "homepage": "http://github.com/stevelacy/chrome-bricks",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/stevelacy/chrome-bricks.git"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "devDependencies": {
+    "gulp-bump": "~0.1.3",
+    "gulp-stylus": "0.0.11",
+    "gulp": "~3.5.0",
+    "gulp-jade": "~0.4.0",
+    "gulp-coffee": "~1.3.0"
+  }
+}
