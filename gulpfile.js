@@ -44,7 +44,6 @@ gulp.watch('./src/*.jade', function(){
 });
 gulp.watch('./src/js/*.coffee', function(){
   gulp.run('coffee');
-  console.log('Logging output');
 });
 gulp.watch('./src/css/*.styl', function(){
   gulp.run('stylus');

@@ -1,6 +1,7 @@
 *
   margin 0
   padding 0
+
 *, *:before, *:after
   -webkit-box-sizing border-box
   box-sizing border-box
@@ -14,12 +15,23 @@ body
   overflow-x hidden
   color #262626
   background #cdcdcd
+  padding 1px 0 1px 0
 
 input
   border none
   margin none
   outline none
-  color #fff
+  color #000
+  padding 10px
+  margin 5px
+button
+  padding 5px
+  background #efefef
+  box-shadow 0 0 2px #cdcdcd
+  border none
+a
+  text-decoration none
+  color inherit
 
 .trans
   -webkit-transition all 0.4s ease
@@ -27,14 +39,54 @@ input
   -o-transition all 0.4s ease
   transition all 0.4s ease
 
+.hidden
+  display none
+
 .content
   text-align center
   margin 10%
+
+.footer
+  position fixed
+  bottom 0
+  height 25px
+  width 100%
+  color #cdcdcd
+  text-align right
+  padding 2px
 
 .clear-box
   @extend .trans
   background rgba(250, 250, 250, .3)
   box-shadow 0 0 1px #666
+
+.white-box
+  @extend .trans
+  background rgba(250, 250, 250, .6)
+  box-shadow 0 0 1px #666
+
+.settings-button
+  cursor pointer
+  img
+    height 21px
+
+.close-div
+  position absolute
+  top 0
+  right 0
+  cursor pointer
+  width 20px
+  height 20px
+
+.settings
+  @extend .white-box
+  display none
+  position absolute
+  top 25%
+  left 25%
+  width 50%
+  height 50%
+
   
 .search
   @extend .clear-box
@@ -42,6 +94,11 @@ input
   height 40px
   margin-left 25%
 
+
+.clock
+  color #fff
+  font-size 10vw
+  text-shadow 0 0 1px #555
 
 .cards
   li

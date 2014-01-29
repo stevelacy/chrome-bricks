@@ -7,11 +7,36 @@ html
     link(rel="stylesheet" type="text/css" href="./css/style.css")
     script(type="text/javascript" src="./js/vendor/jquery-2.1.0.js")
     script(type="text/javascript" src="./js/vendor/jqui.js")
-    script(type="text/javascript" src="./js/vendor/googlesuggest.js")
+    //script(type="text/javascript" src="./js/vendor/googlesuggest.js")
     script(type="text/javascript" src="./js/main.js")
     script(type="text/javascript" src="./js/http.js")
   body
 
     .content
-      input.search(type="text")
+      .clock ...
+      //input.search(type="text")
       .cards
+
+      .settings
+        .close-div X
+        .content
+
+    .footer
+      .settings-button
+        img(src="./images/settings.png" alt="")
+
+    #new-button
+      li
+        .title.new-brick +
+
+    #new-brick.hidden
+      h2 New
+        br
+        input#new-title(type='text' placeholder="Title")
+        br
+        input#new-url(type='text' placeholder="URL (http://slacy.me)")
+        br
+        button#new-save Save
+        
+    #settings.hidden
+      h1 Settings
